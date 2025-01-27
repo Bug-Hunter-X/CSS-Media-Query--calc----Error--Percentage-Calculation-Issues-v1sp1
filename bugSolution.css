@@ -1,0 +1,11 @@
+/* bugSolution.css */
+@media (min-width: 768px) {
+  .container {
+    width: calc(50vw - 20px); /* Safer calculation, avoids potential issues with undefined parent width */
+  }
+}
+
+/* Fallback for cases where the calculation might fail */
+.container {
+  width: 50%;
+}
